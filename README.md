@@ -20,10 +20,9 @@ Web siteden verilerin çekilmesi için Python programlama dili üzerinden Seleni
 Proje için sağlanan bağlantı sayfasındaki tüm ürünler, kazıma sürecinde kullanıldı. Kod 17 Haziran'da çalıştırıldığında 113 ürün web siteden çekildi. Web sitedeki elementler, Selenium driverı kullanılarak, class isimleriyle elemanların bulunmasıyla çekildi. Ek olarak, sleep fonksiyonları web sitedeki işlemlerin Captcha doğrulamasına yönlendirilmemesi için uzun tutuldu.
 
 ```Python
-...
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
-..
+...
 # Item Elements
 name_elements = driver.find_elements(By.CLASS_NAME, 'product-card__goods-title-container')
 sleep(2)
@@ -31,7 +30,6 @@ sleep(2)
 # Price Elements
 price_elements = driver.find_elements(By.CLASS_NAME, 'product-card__prices-info')
 sleep(2)
-...
 ```
 Veri çekildiğinde birçok noktalama işareti ve gereksiz karakterler mevcuttu. Bunlar tespit edilip temizlendi.
 
@@ -63,6 +61,7 @@ def product_identifier(text):
     elif 'Vest' in text:
         return 'Vest'
 ...
+df1['Product_Type'] = df1['ProductName'].apply(product_identifier)
 ```
 
 Ön işlemenin sonunda 7 sütun ve 113 satırdan oluşan temiz bir tablo oluşturuldu. Bu tablo xlsx formatında Python ortamından dışarı aktarıldı.
