@@ -10,11 +10,25 @@ SHEIN, online web sitesi üzerinden satın alım imkanı sunan bir moda perakend
 Web siteden verilerin çekilmesi için Python programlama dili üzerinden Selenium kütüphanesi, yardımcı olması için NumPY ve Pandas gibi veri manipülasyon ve temizleme kütüphaneleri de kullanıldı. Xlsx formatında dışarı aktarılan veri, görselleştirme ve metrikslerin oluşturulması için PowerBI ortamına aktarıldı. Tüm grafikler ve metriksler PowerBI ortamında oluşturuldu.
 
 
-## Data Source
+## Veri Kazıma & Ön İşleme
 
-To achieve this, we worked with a dataset containing the NBA player statistics from the 2023-2024 season, prepared in structured tables by the Basketball Reference website. We were able to download the dataset containing the total season stats of NBA players from the website. The data format is in CSV. Additionally, the Basketball Reference website also utilizes Sportradar data as its source.
+[Veri Kaynağı](https://us.shein.com/recommend/Women-New-in-sc-100161222.html?adp=35242185&categoryJump=true&ici=us_tab03navbar03menu01dir02&src_identifier=fc%3DWomen%20Clothing%60sc%3DWomen%20Clothing%60tc%3DShop%20by%20category%60oc%3DNew%20in%60ps%3Dtab03navbar03menu01dir02%60jc%3DitemPicking_100161222&src_module=topcat&src_tab_page_id=page_home1718006855109)
 
-[Data Source](https://www.basketball-reference.com/leagues/NBA_2024_totals.html)
+Proje için sağlanan bağlantı sayfasındaki tüm ürünler, kazıma sürecinde kullanıldı. Kod 17 Haziran'da çalıştırıldığında 113 ürün web siteden çekildi. Web sitedeki elementler, Selenium driverı kullanılarak, class isimleriyle elemanların bulunmasıyla çekildi. Ek olarak, sleep fonksiyonları web sitedeki işlemlerin Captcha doğrulamasına yönlendirilmemesi için uzun tutuldu.
+
+```Python
+...
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
+...
+# Item Elements
+name_elements = driver.find_elements(By.CLASS_NAME, 'product-card__goods-title-container')
+sleep(2)
+    
+# Price Elements
+price_elements = driver.find_elements(By.CLASS_NAME, 'product-card__prices-info')
+sleep(2)
+```
 
 
 ## Tools
