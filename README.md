@@ -33,20 +33,41 @@ price_elements = driver.find_elements(By.CLASS_NAME, 'product-card__prices-info'
 sleep(2)
 ```
 
+Veri çekildiğinde birçok noktalama işareti ve gereksiz karakterler mevcuttu. Bunlar tespit edilip temizlendi.
 
-## Tools
+```Python
+...
+# Adjust the Price Col
+def clean_data(data):
+    data = data.replace('$', '').replace('%', '')
+    amount_change = data.split('\n')
+    amount = float(amount_change[0])
+    change = int(amount_change[1]) if len(amount_change) > 1 else None
+    return amount, change
 
-- R Studio
-  -  [Download here](https://posit.co/download/rstudio-desktop/#download)
- 
+df1[['Product_Price', 'Price_Discount_Rate']] = pd.DataFrame(df1['Price'].apply(clean_data).tolist(), index=df1.index)
+...
+```
 
+'ProductName' sütununun içinde geçen kelimelere bakılarak, ürünün türüne ve market yerine ulaşmak için kodlar yazıldı.
 
-## Data Preparation/Cleaning
+...
+# Define the product type by Keywords at Title
+def product_identifier(text):
+    if 'T-shirt' in text or 'T-Shirt' in text:
+        return 'T-Shirt'
+    elif 'Bikini' in text:
+        return 'Bikini'
+    elif 'Cardigan' in text:
+        return 'Cardigan'
+    elif 'Vest' in text:
+        return 'Vest'
+...
+```
 
-In the initial data preparation phase, we performed the following tasks:
-1. Loading the data and inspecting.
-2. Handling NA values.
-3. Data cleaning and formatting.
+Ön işlemenin sonunda 7 sütun ve 113 satırdan oluşan temiz bir tablo oluşturuldu. Bu tablo xlsx formatında Python ortamından dışarı aktarıldı.
+
+![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/0e0be087-22fb-45be-8ddd-b12378e15b25)
 
 
 
