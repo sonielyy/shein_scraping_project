@@ -74,7 +74,7 @@ df1['Product_Type'] = df1['ProductName'].apply(product_identifier)
 
 ![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/82fa5b82-bf0c-45a3-872b-6e3fc874026c)
 
-113 ürün ilanını incelediğimizde; 
+113 ürün ilanını incelediğimizde:
 - 15 farklı tipteki ürüne(T-shirt, şort, bikini,..) ve 20 farklı markete(SHEIN EZwear, SHEIN LUNE,..) ait bir ürün listesi elimizde.
 - Ürünlerin fiyatı $3-$23 arasında değişkenlik gösteriyor, ortalama fiyat ise $8,2.
 - Kaydedilen ürün incelemeleri web sitede '+100' veya '+1000' şeklindeki formatlarda tutulduğu için 'Minimum verilen oy' üzerinden analiz yapıldı. Ortalama oy değeri 438'e düşmekte.
@@ -83,15 +83,48 @@ df1['Product_Type'] = df1['ProductName'].apply(product_identifier)
 
 ### Ürün Fiyatları
 
+![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/8eb12862-9f6d-40e3-b6da-18ae251970d3)
+
+Ortalama fiyatlar üzerinden ürün tipi ve markete göre yorum yapacak olursak:
+- Hırka ($16,74) ve elbise ($14,89), satılan ürünler arasından en pahalı ürünler.
+- Crop ($5,22) ve fanila ($5,87) ise satılan ürünler arasından en ucuz ürünler.
+- SHEIN WYWH ($20,39) ve SHEIN JORESS ($18,19) en pahalı sanal marketler.
+- SHEIN Qutie ($5,29) ve SHEIN Coolane ($5,69) ise en ucuz marketler.
+
+### Ürün Adedi
+
+![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/f4041afd-3dd1-47e0-bd41-cdf6fa67798a)
+
+Farklı ürün sayısını ürünlerin tipine ve marketlerine göre yorumlarsak: 
+- Üst kıyafetleri (24) ve T-shirtler (20) en fazla sayıda olanlar.
+- Jean pantolonlardan, elbiseden ve bikiniden sadece birer tane bulunmakta.
+- En ünlü market yerleri SHEIN LUNE (33) ve SHEIN EZwear (29).
+- Birçok market yerinde birer tane ürün satılmakta.
+
+### Ürün Değerlendirmesi
+
+![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/a91b41f7-895a-44ee-9860-1649704dd6fe)
+
+Ürün değerlendirmelerini incelediğimizde:
+- Jeans pantolon ve üst-şort olarak satılan ürünlere ait ortalama +1000'den fazla inceleme geldiği görülüyor.
+- Öte yandan elbise ve kadın geceliğine verilen oylar sadece +100'den fazla.
+- Marketlere baktığımızda 4 market +1000'den fazla ortalama oylarıyla galip: MUSERA, SHEIN BAE, SHEIN WYWH ve SHEIN Frenchy.
+- 7 market ise sadece +100'den fazla inceleme almış.
+
+### Ürün İndirimleri  
+
+![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/0ab21e1a-3b12-42f1-83f7-1aaba932fa7a)
+
+Son olarak ortalama ürün indirimlerini incelediğimizde:
+- Jeans pantolon (%20) ve normal pantolon (%16), en yüksek indirime sahip ürünler.
+- Kadın geceliği ise (%3) en az indirime sahip ürün.
+- En yüksek indirimleri yapan marketlerde SHEIN Essnce (%14) ve SHEIN Qutie (%13) var.
+- En düşük indirimleri yapan marketler ise ortalama %7'den yüksek indirim yapıyor.
 
 
+## Özet
 
-## Final Thoughts
 
-We have carefully chosen the most skilled players and made predictions on who is likely to be selected as All-stars. The voting period will end on January 20, 2024. On January 25, TNT will announce the NBA All-stars, and we will compare our predictions with the actual All-stars.
-
-Based on the first fan returns, our prediction model correctly predicted 68% of the top voted players and suggested 10 additional names for prediction.
-[First Fan Returns](https://twitter.com/NBAPR/status/1742969199549358405)
 
 
 
