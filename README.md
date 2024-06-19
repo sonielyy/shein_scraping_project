@@ -23,20 +23,19 @@ Proje için sağlanan bağlantı sayfasındaki tüm ürünler, kazıma sürecind
 ...
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
-...
+..
 # Item Elements
 name_elements = driver.find_elements(By.CLASS_NAME, 'product-card__goods-title-container')
 sleep(2)
-    
+
 # Price Elements
 price_elements = driver.find_elements(By.CLASS_NAME, 'product-card__prices-info')
 sleep(2)
+...
 ```
-
 Veri çekildiğinde birçok noktalama işareti ve gereksiz karakterler mevcuttu. Bunlar tespit edilip temizlendi.
 
 ```Python
-...
 # Adjust the Price Col
 def clean_data(data):
     data = data.replace('$', '').replace('%', '')
@@ -51,6 +50,7 @@ df1[['Product_Price', 'Price_Discount_Rate']] = pd.DataFrame(df1['Price'].apply(
 
 'ProductName' sütununun içinde geçen kelimelere bakılarak, ürünün türüne ve market yerine ulaşmak için kodlar yazıldı.
 
+```Python
 ...
 # Define the product type by Keywords at Title
 def product_identifier(text):
