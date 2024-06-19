@@ -5,6 +5,9 @@
 
 SHEIN, online web sitesi üzerinden satın alım imkanı sunan bir moda perakendecisidir. Ürünlerin adı, fiyatı, türü, satılan sanal marketi, indirim oranı ve müşteri inceleme sayısı gibi farklı bilgiler web sitede mevcut. Bu analizin amacı, belirtilen verilerin web site üzerinden kod aracılığıyla çekilip anlamlı sonuçlar için analiz edilmesine dayanıyor.
 
+![image](https://github.com/sonielyy/shein_scraping_project/assets/71605453/c5b20b8a-9fff-4339-ae55-154df7a765bc)
+
+
 ## Kullanılan Araçlar
 
 Web siteden verilerin çekilmesi için Python programlama dili üzerinden Selenium kütüphanesi, yardımcı olması için NumPY ve Pandas gibi veri manipülasyon ve temizleme kütüphaneleri de kullanıldı. Xlsx formatında dışarı aktarılan veri, görselleştirme ve metrikslerin oluşturulması için PowerBI ortamına aktarıldı. Tüm grafikler ve metriksler PowerBI ortamında oluşturuldu.
