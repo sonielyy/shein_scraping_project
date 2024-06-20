@@ -128,6 +128,10 @@ Analizi tamamladığımızda, 117 SHEIN ürünü için şu çıkarımları yapab
 
 - Jeans, elbise, hırka ve pantolonlar ortalama fiyatı en yüksek ürünler oluyor. Bu ürünler marketlerde sayıca az bulunuyor. Öte taraftan, bu ürünlerin indirim oranları diğer ürünlere göre yüksek. Bu da ortalama yüksek fiyatlarını daha cazip yapmak için bir strateji olabilir.
 - Üst giyim ürün türlerini incelediğimizde(T-shirt, vest, top,..) $10'ın üstünde bir fiyat bulmak zor. Üstelik, SHEIN üzerinde sayıca en fazla ürün bu gruba ait. Fazla satılmalarından dolayı indirim oranları da bu ürünler için az(incelediğimizde %10'dan fazla indirim pek yok). Ürün incelemeleri de ortalama +500'den fazla diyebiliriz.
+- SHEIN LUNE iki yönüyle öne çıkan bir market: Satılan ürün sayısı bakımından en fazla satan ilk 3 market arasında ve diğer marketlere göre en ucuz ortalama fiyat bu markette.
+- SHEIN Essnce ise ortalamaya baktığımızda en fazla indirim oranına sahip. Ek olarak, bu markette de 10'dan fazla ürün bulunuyor.
+- SHEIN WYWH ise en fazla indirim ve yüksek incelemeye sahip bir market. Ürün sayısının az olması da bir gerçek.
+- SHEIN Qutie ve SHEIN Coolane de en ucuz marketler, fakat gelen incelemelere baktığımızda +100 değerlerini görmemiz, bu marketlerden alım yaparken tekrar düşünülmesi gerektiğini belirtiyor.
 
 
 
