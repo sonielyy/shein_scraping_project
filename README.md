@@ -127,8 +127,7 @@ Son olarak ortalama ürün indirimlerini incelediğimizde:
 Analizi tamamladığımızda, 117 SHEIN ürünü için şu çıkarımları yapabiliyoruz:
 
 - Jeans, elbise, hırka ve pantolonlar ortalama fiyatı en yüksek ürünler oluyor. Bu ürünler marketlerde sayıca az bulunuyor. Öte taraftan, bu ürünlerin indirim oranları diğer ürünlere göre yüksek. Bu da ortalama yüksek fiyatlarını daha cazip yapmak için bir strateji olabilir.
-- 
-
+- Üst giyim ürün türlerini incelediğimizde(T-shirt, vest, top,..) $10'ın üstünde bir fiyat bulmak zor. Üstelik, SHEIN üzerinde sayıca en fazla ürün bu gruba ait. Fazla satılmalarından dolayı indirim oranları da bu ürünler için az(incelediğimizde %10'dan fazla indirim pek yok). Ürün incelemeleri de ortalama +500'den fazla diyebiliriz.
 
 
 
